@@ -1,0 +1,217 @@
+
+
+body{
+  font-family: Arial, sans-serif;
+  color:rgb(255, 255, 255);
+  background-color: #ffffff;
+  line-height:2;
+}
+
+.flag {
+    width: 50px;
+    border-radius: 5px;
+}
+.susijengi{
+  font-weight:800; letter-spacing:.5px; text-transform:uppercase; font-size:1.1rem;
+}
+
+.susilogo{
+    width: 150px;
+    margin-left: 285px;
+}
+
+.nav{
+  display:flex; gap:10px; align-items:center;
+}
+.nav a{
+  color:#ffffff; text-decoration: none; font-weight:700;
+  padding:10px 12px; border-radius:10px; transition:.2s;
+}
+.nav a:hover{ background:rgba(255,255,255,.12) }
+.menuPainike{ display:none; background:none; border:1px solid rgba(255,255,255,.3); color:var(--white); padding:8px 12px; border-radius:10px
+}
+
+.menu {display:none}
+
+@media (max-width: 900px){
+  .menu{display: flex; background-color: white; padding: 10px; border-radius: 10px; font-size: 15px; font-weight: 700; }
+  .nav{ display:none }
+  .spacer{display: none;}
+  .flag{display: none;}
+  .susijengi{display: none;}
+  .susilogo{margin: auto;}
+  .nav.open{ display:flex; position:absolute; top:56px; right:16px; flex-direction:column; background-color: #002F6C;
+     padding:8px; border-radius:12px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.726) }
+}
+.spacer{flex:1}
+
+.ylapalkki{
+  position:sticky;
+  top:0; z-index:1000;
+  background-color: #002F6C;
+  color:#ffffff;
+  box-shadow:0 6px 18px rgba(0, 0, 0, 0.726);
+}
+.ylasisalla{
+  max-width:1100px; margin:0 auto; padding:10px 16px;
+  display:flex; align-items:center; gap:12px;
+}
+
+
+.banneri{
+    position: relative;
+    min-height: 45vh;
+    background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.55)), url(kuvat/banner.jpg) center/cover no-repeat;
+}
+
+
+.banneri .banneriotsikko{
+  text-align:center; padding:20px 16px;
+}
+
+.banneriotsikko h1 {
+    font-size: 45px;
+}
+
+.banneriotsikko p {
+    font-size: 25px;
+}
+
+.banneripainikkeet, .players, .matches {
+    color: #002F6C;
+    text-decoration-line: none;
+    display:inline-block; text-decoration:none; font-weight:800; text-transform:uppercase; letter-spacing:.5px;
+    padding:12px 16px; border-radius:12px; box-shadow:var(--shadow);
+    display:flex; gap:12px; justify-content:center; flex-wrap:wrap;
+ 
+    
+}
+
+.players, .matches {
+       background-color: white;
+}
+
+
+.pelaajakortit {
+  display: flex;
+  justify-content: center;  
+  flex-wrap: wrap;         
+  gap: 20px;                
+  margin-top: 20px;
+}
+
+.pelaajakortti {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  overflow: hidden;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pelaajakortti:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.pelaajakortti img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.pelaajakortti h3 {
+  margin: 10px 0 5px 0;
+  color: black;
+}
+
+.pelaajakortti p {
+  margin: 0 0 10px 0;
+  color: #4a5866;
+  font-size: 0.9rem;
+}
+
+.pelaajaspotlight {
+    color: black;
+    text-align: center;
+}
+
+
+
+.matsit-grid {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;        
+  gap: 20px;            
+  margin-top: 20px;
+}
+
+.pelikortti {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  padding: 16px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pelikortti:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.pelikortti h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.1rem;
+}
+
+.pelikortti p {
+  margin: 0 0 10px 0;
+  color: #4a5866;
+  font-size: 0.9rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eaf3ff;
+  color: #002f6c;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.tulevatmatsit {
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+.footer {
+  background-color: #002F6C;
+  color: #ffffff;
+  text-align: center;
+  padding: 0px 10px;
+  font-weight: 700;
+}
+
+
+.footer a {
+  color: #ffffff;
+  margin: 0px 10px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #63a1d3;
+}
+
+
