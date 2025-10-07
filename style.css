@@ -35,6 +35,7 @@ body{
 
 @media (max-width: 900px){
   .menu{display: flex; background-color: white; padding: 10px; border-radius: 10px; font-size: 15px; font-weight: 700; }
+  .menuPainike {display: block; cursor: pointer; font-size: 30px;}
   .nav{ display:none }
   .spacer{display: none;}
   .flag{display: none;}
@@ -58,10 +59,15 @@ body{
 }
 
 
+
+
+
+/* Index/etusivun tyylit */
+
 .banneri{
     position: relative;
     min-height: 45vh;
-    background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.55)), url(kuvat/banner.jpg) center/cover no-repeat;
+    background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.55)), url(kuvat/banner.jpg) center 30%/cover no-repeat;
 }
 
 
@@ -71,10 +77,12 @@ body{
 
 .banneriotsikko h1 {
     font-size: 45px;
+    text-shadow: 2px 2px black;
 }
 
 .banneriotsikko p {
     font-size: 25px;
+    text-shadow: 3px 3px black;
 }
 
 .banneripainikkeet, .players, .matches {
@@ -100,11 +108,14 @@ body{
   margin-top: 20px;
 }
 
+.pelaajalinkki {
+  text-decoration-line: none;
+  text-decoration: none;}
+
 .pelaajakortti {
   background: white;
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);                             
   width: 220px;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -139,7 +150,7 @@ body{
 
 
 
-.matsit-grid {
+.matsitLaatikot {
   display: flex;
   justify-content: center; 
   flex-wrap: wrap;        
@@ -183,14 +194,67 @@ body{
   font-size: 0.8rem;
 }
 
-.tulevatmatsit {
-    color: black;
-    text-align: center;
+
+/*Players/pelaajat sivun tyylit */
+
+.banneriPlayers{
+    position: relative;
+    min-height: 45vh;
+    background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.55)), url(kuvat/tiimikuva.jpg) center/cover no-repeat;
+}
+
+.banneriPlayers .banneriotsikko{
+  text-align:center; padding:20px 16px;
+}
+
+.pelaajakortit2 {
+  display: flex;
+  justify-content: center;  
+  flex-wrap: wrap;         
+  gap: 20px;                
+  margin-top: 20px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
 
 
+/* Matsi sivun tyylit */
+
+
+.bannerimatches{
+    position: relative;
+    min-height: 45vh;
+    background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.55)), url(kuvat/matchestausta.jpg) center 30%/cover no-repeat;
+}
+
+.bannerimatches .banneriotsikko{
+  text-align:center; padding:20px 16px;
+}
+
+.pelilinkki{
+  text-decoration: none;
+  color: black;
+  
+}
+
+
+.tulevatmatsit {
+    color: black;
+    text-align: center;
+}
+
+.PelitOtsikko{
+  text-decoration: none;
+  color: black;
+
+}
+.menneetmatsit {
+    color: black;
+    text-align: center;
+}
 
 
 .footer {
