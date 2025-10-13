@@ -114,6 +114,7 @@ body{
 
 .pelaajaprofiili {
   text-decoration-line: none;
+  text-decoration: none;}
 }
 
 .pelaajakortti {
@@ -281,5 +282,6 @@ body{
 .footer a:hover {
   color: #63a1d3;
 }
+
 
 
