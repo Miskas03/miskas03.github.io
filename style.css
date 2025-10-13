@@ -112,6 +112,10 @@ body{
   text-decoration-line: none;
   text-decoration: none;}
 
+.pelaajaprofiili {
+  text-decoration-line: none;
+}
+
 .pelaajakortti {
   background: white;
   border-radius: 12px;
