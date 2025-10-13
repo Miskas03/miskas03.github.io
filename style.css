@@ -124,7 +124,6 @@ body{
   width: 220px;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
-  text-decoration-line: none;
 }
 
 .pelaajakortti:hover {
@@ -283,6 +282,7 @@ body{
 .footer a:hover {
   color: #63a1d3;
 }
+
 
 
 
